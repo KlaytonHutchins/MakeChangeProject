@@ -9,15 +9,6 @@ public class MakeChange {
 
 		double changeDue = userPrompt();
 
-		if (changeDue == 0) {
-			System.out.println("Thank you for using exact change. Have a good day!");
-		} else if (changeDue < 0) {
-			System.out.println("Not enough tendered!");
-		} else {
-			System.out.println("Change due: " + changeDue);
-			makeChange(changeDue);
-		}
-
 		sc.close();
 	}
 
@@ -31,12 +22,6 @@ public class MakeChange {
 		double moneyTendered = sc.nextDouble();
 
 		return moneyTendered - itemPrice;
-	}
-
-	public static void makeChange(double changeDue) {
-		int numberTwenties, numberTens, numberFives, numberOnes,
-			numberQuarters, numberDimes, numberNickels, numberPennies;
-		
 	}
 
 }
